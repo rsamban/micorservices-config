@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+config:
+  ftp:
+    host: 192.168.1.9
+    port: 21
+    user: ramesh
+    password: ramesh
+    remoteDirectory: ftpDirectory
+    localDirectory: localDirForFtpTransfer
+    fileNamePattern: "*.xml1"
+  kafka:
+    hostPort: 192.168.1.9:9092
+    orderTopic: orderTopic
+  sftp:
+    host: 192.168.1.9
+    port: 22
+    user: ramesh
+    password: ramesh
+    remoteDirectory: sftpDirectory
+    localDirectory: localDirForSftpTransfer
+    fileNamePattern: "*.xml"
+  activemq:
+    brokerUrl: tcp://192.168.1.9:61616
+    jmsTopic: orderTopic
+
