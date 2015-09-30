@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: config-client
-  cloud:
-    config:
-      uri: http://localhost:8888
 config:
   ftp:
     host: 192.168.1.9
@@ -12,7 +6,7 @@ config:
     password: ramesh
     remoteDirectory: ftpDirectory
     localDirectory: localDirForFtpTransfer
-    fileNamePattern: "*.xml1"
+    fileNamePattern: "*.xml2"
   kafka:
     hostPort: 192.168.1.9:9092
     orderTopic: orderTopic
