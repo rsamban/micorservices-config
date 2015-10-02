@@ -1,0 +1,24 @@
+config:
+  ftp:
+    host: 192.168.1.9
+    port: 21
+    user: ramesh
+    password: '{cipher}9e950a0af034f9fa3580f8cc331c2178d13ff662ef6b24b29f40fba6b766abe1'
+    remoteDirectory: ftpDirectory
+    localDirectory: localDirForFtpTransfer
+    fileNamePattern: "*.xml2"
+  kafka:
+    hostPort: 192.168.1.9:9092
+    orderTopic: orderTopic
+  sftp:
+    host: 192.168.1.9
+    port: 22
+    user: ramesh
+    password: '{cipher}9e950a0af034f9fa3580f8cc331c2178d13ff662ef6b24b29f40fba6b766abe1'
+    remoteDirectory: sftpDirectory
+    localDirectory: localDirForSftpTransfer
+    fileNamePattern: "*.xml"
+  activemq:
+    brokerUrl: tcp://192.168.1.9:61616
+    jmsTopic: orderTopic
+
